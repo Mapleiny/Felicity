@@ -1,0 +1,158 @@
+<div class="full-panel style">
+	<div class="slide">
+		<div class="slide-list">
+			<ul></ul>
+		</div>
+		<span class="slide-name">表格样式</span>
+		<div class="slide-count">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</div>
+<div class="normal-panel header-footer">
+	<header class="panel-title">标题与表尾</header>
+	<div class="panel-body">
+		<ul class="item-list inline col-row-set">
+			<li class="item col-left">
+				<label for="col-left-set"></label>
+				<select class="select-xs" id="col-left-set">
+					<option value="">0</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</li>
+			<li class="item row-top">
+				<label for="row-top-set"></label>
+				<select class="select-xs" id="row-top-set">
+					<option value="">0</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</li>
+			<li class="item row-bottom">
+				<label for="row-bottom-set"></label>	
+				<select class="select-xs" id="row-bottom-set">
+					<option value="">0</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</li>
+		</ul>
+		<div class="table-name-set">
+			<input type="checkbox" id="table-name">
+			<label for="table-name">表格名称</label>
+		</div>
+	</div>
+</div>
+<div class="normal-panel font-size inline">
+	<header class="panel-title">表格字体大小</header>
+	<div class="btn-group font-size-set">
+		<a href="javascript:;" class="btn btn-default btn-xs"><span>A</span></a>
+		<a href="javascript:;" class="btn btn-default btn-xs">A</a>
+	</div>
+</div>
+<div class="normal-panel table-border">
+	<header class="panel-title">表格外框</header>
+	<div class="panel-body">
+		<ul class="item-list inline">
+			<li class="item">
+				<select name="" id="" class="border-style">
+					<option value="solid">实线</option>
+					<option value="dashed">虚线</option>
+					<option value="dotted">点</option>
+					<option value="none">无</option>
+				</select>
+			</li>
+			<li class="item">
+				<div class="color-picker inline">
+					<div class="color-preview"></div>
+					<label for="color-picker" class="color-pick-btn"></label>
+					<input type="color" id="color-picker" name="border-color">
+				</div>
+			</li>
+			<li class="item">
+				<div class="input-with-unit border-width">
+					<input type="number" min="0" max="100" value="1" name="border-width">
+					<span class="unit">px</span>
+				</div>
+			</li>
+		</ul>
+		<div class="table-name-border-set">
+			<input type="checkbox" id="table-name-border">
+			<label for="table-name-border">为表格名称添加外框</label>
+		</div>
+	</div>
+</div>
+<div class="normal-panel gridlines">
+	<header class="panel-title">网格线</header>
+	<div class="btn-group">
+		<a href="javascript:;" class="btn btn-primary btn-sm"><span>A</span></a>
+		<a href="javascript:;" class="btn btn-primary btn-sm">A</a>
+	</div>
+	<div class="btn-group">
+		<a href="javascript:;" class="btn btn-primary btn-sm"><span>A</span></a>
+		<a href="javascript:;" class="btn btn-primary btn-sm">A</a>
+		<a href="javascript:;" class="btn btn-primary btn-sm">A</a>
+	</div>
+</div>
+<div class="normal-panel inline interlacing-color-set">
+	<header class="panel-title">
+		<input type="checkbox" id="interlacing-color">
+		<label for="interlacing-color">隔行颜色</label>
+	</header>
+	<div class="color-picker inline">
+		<div class="color-preview"></div>
+		<label for="color-picker2" class="color-pick-btn"></label>
+		<input type="color" id="color-picker2" name="border-color">
+	</div>
+</div>
+<div class="normal-panel row-col-set">
+	<details open="open">
+		<summary class="panel-title">行与列大小</summary>
+		<div class="detail">
+			<ul class="item-list row-col">
+				<li class="item">
+					<ul class="item-list inline row-set">
+						<li class="item">行：</li>
+						<li class="item">
+							<span class="glyphicon glyphicon-resize-vertical"></span>
+							<div class="input-with-unit">
+								<input type="number" min="0" max="100" value="1" name="">
+								<span class="unit">px</span>
+							</div>
+						</li>
+						<li class="item">
+							<a href="javascript:;" class="btn btn-default btn-xs">适合</a>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<ul class="item-list inline col-set">
+						<li class="item">列：</li>
+						<li class="item">
+							<span class="glyphicon glyphicon-resize-horizontal"></span>
+							<div class="input-with-unit">
+								<input type="number" min="0" max="100" value="1" name="">
+								<span class="unit">px</span>
+							</div>
+						</li>
+						<li class="item">
+							<a href="javascript:;" class="btn btn-default btn-xs">适合</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="adjust-cell-size-set">
+			<input type="checkbox" id="adjust-cell-size">
+			<label for="adjust-cell-size">调整行大小以适合单元格内容</label>
+		</div>
+	</details>
+</div>

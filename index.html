@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nimble</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<nav id="function-nav" class="function-area">
+			<div class="frame-set">
+				<div class="btn-toolbar">
+					<div class="btn-with-bottm display-set">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-list-alt"></span><span class="icon icon-arrow"></span></a>
+						<span class="btn-name">显示</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm">100%<span class="icon icon-arrow"></span></a>
+						<span class="btn-name">缩放</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus"></span></a>
+						<span class="btn-name">添加单页</span>
+					</div>	
+				</div>
+			</div>
+			<div class="run-page">
+				<div class="btn-with-bottm">
+					<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-play"></span></a>
+					<span class="btn-name">播放</span>
+				</div>
+			</div>
+			<div class="component-list">
+				<div class="btn-toolbar">
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th"></span></a>
+						<span class="btn-name">表格</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-signal"></span></a>
+						<span class="btn-name">图表</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-header"></span></a>
+						<span class="btn-name">文本</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-glass"></span></a>
+						<span class="btn-name">形状</span>
+					</div>
+					<div class="btn-with-bottm">
+						<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-picture"></span></a>
+						<span class="btn-name">媒体</span>
+					</div>
+				</div>
+			</div>
+			<div class="element-set">
+				<div class="btn-with-bottm">
+					<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>
+					<span class="btn-name">格式</span>
+				</div>
+				<div class="btn-with-bottm">
+					<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-film"></span></a>
+					<span class="btn-name">动画效果</span>
+				</div>
+				<div class="btn-with-bottm">
+					<a href="javascript:;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-file"></span></a>
+					<span class="btn-name">页面</span>
+				</div>
+			</div>
+		</nav>
+		<div class="opration-area">
+			<section id="page-list" class="page-list">
+				<div class="page active">
+					<span class="page-num">1</span>
+					<div class="page-preview">
+						<div class="preview-content"></div>
+					</div>
+				</div>
+				<div class="page">
+					<span class="page-num">2</span>
+					<div class="page-preview">
+						<div class="preview-content"></div>
+					</div>
+				</div>
+			</section>
+			<section id="standard-editor" class="standard-editor">
+				<div id="preview-container">
+				</div>
+			</section>
+			<section id="utilities" class="utilities table-setting">
+				<!--#include file="setting/table/index.html"-->
+			</section>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="static/js/require.js" data-main="static/js/main.js"></script>
+</html>

@@ -1,0 +1,35 @@
+.page-list{
+	background-color: #F7F3F2;
+	border-top: solid 1px #B4B1B4;
+	overflow-y: scroll;
+	.page{
+		padding:5px 10px 5px 20px;
+		position: relative;
+		&.active{
+			background-color: #4696F7;
+			.page-num{
+				color:#fff;
+			}
+			.page-preview{
+				border-color:#FFE24F;
+			}
+		}
+		&:hover{
+			cursor: pointer;
+		}
+		.page-num{
+			position: absolute;
+			bottom:0;
+			left:0;
+			text-align: center;
+			width:20px;
+			font-size: 12px;
+		}
+		.page-preview{
+			border:solid 2px #fff;
+			box-shadow: 0 0 1px #333;
+			height:60px;
+			background-color: #F7F3F2;
+		}
+	}
+}

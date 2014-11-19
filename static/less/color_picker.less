@@ -1,0 +1,36 @@
+.color-picker{
+	border: solid 1px #949494;
+	border-radius: 3px;
+	width:65px;
+	height:20px;
+	position:relative;
+	&.inline{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.color-preview{
+		width:43px;
+		height:100%;
+		border-right: solid 1px #949494;
+		float: left;
+		cursor: pointer;
+	}
+	.color-pick-btn{
+		width:20px;
+		height:100%;
+		float: left;
+		background: url(../img/sf_insp_color.png) 50% 50% no-repeat;
+		background-size: 80%;
+		position:relative;
+		cursor: pointer;
+		&:hover{
+			background-color: #DDDDDD;
+		}
+	}
+	input[type="color"]{
+		visibility: hidden;
+		position: absolute;
+		width:0;
+		height:0;
+	}
+}
