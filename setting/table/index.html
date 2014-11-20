@@ -5,10 +5,10 @@
 				<a href="javascript:;" class="tab-item">表格</a>
 			</td>
 			<td>
-				<a href="javascript:;" class="tab-item active">单元格</a>
+				<a href="javascript:;" class="tab-item">单元格</a>
 			</td>
 			<td>
-				<a href="javascript:;" class="tab-item">文本</a>
+				<a href="javascript:;" class="tab-item active">文本</a>
 			</td>
 			<td>
 				<a href="javascript:;" class="tab-item">排列</a>
@@ -17,44 +17,105 @@
 	</table>
 </header>
 <div class="setting-detail">
+	<div class="full-panel">
+		<a href="javascript:;">
+			<span class="text-style">正文</span>
+			<span class="caret"></span>
+		</a>
+	</div>
 	<div class="normal-panel">
-		<div class="panel-title">数据格式</div>
-		<div class="panel-body">
-			<select class="select-xs">
-				<option value="">自动</option>
-				<optgroup label="数字类">
-					<option value="">数字</option>
-					<option value="">货币</option>
-					<option value="">百分比</option>
-					<option value="">分数</option>
-					<option value="">记数系统</option>
-					<option value="">科学记数法</option>
-				</optgroup>
-				<optgroup label="文本类">
-					<option value="">文本</option>
-				</optgroup>
-				<optgroup label="时间类">
-					<option value="">日期与时间</option>
-					<option value="">持续时间</option>
-				</optgroup>
-			</select>
-			<div class="detail">
-
+		<div class="normal-panel style-layout-tab">
+			<div class="btn-group">
+				<a href="javascript:;" class="btn btn-default btn-xs">样式</a>
+				<a href="javascript:;" class="btn btn-default btn-xs">布局</a>
 			</div>
 		</div>
-	</div>
-	<div class="normal-panel color-fill fill">
-		<div class="set-preview"></div>
-		<details open="open">
-			<summary class="panel-title">填充</summary>
-			<select class="select-xs type">
-				<option value="">无填充</option>
-				<option value="">颜色填充</option>
-				<option value="">渐变填充</option>
-				<option value="">图像填充</option>
-			</select>
-			<div class="detail">
+		<div class="normal-panel">
+			<div class="panel-title">字体</div>
+			<div class="panel-body">
+				<select name="font-family" class="select-xs">
+					<option value="">Helvetica</option>
+				</select>
+				<div class="btn-group">
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">I</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">U</a>
+					<a href="javascript:;" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cog"></span></a>
+				</div>
+				<div class="input-with-unit border-width">
+					<input type="number" min="0" max="100" value="1" name="border-width">
+					<span class="unit">px</span>
+				</div>
+				<div class="color-picker inline">
+					<div class="color-preview"></div>
+					<label for="color-picker2" class="color-pick-btn"></label>
+					<input type="color" id="color-picker2" name="border-color">
+				</div>
 			</div>
-		</details>
+		</div>
+		<div class="normal-panel">
+			<div class="panel-title">对齐</div>
+			<div class="panel-body">
+				<div class="btn-group">
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+				</div>
+				<div class="btn-group">
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+				</div>
+				<div class="btn-group">
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+				</div>
+			</div>
+		</div>
+		<div class="normal-panel">
+			<div class="panel-title">行间距</div>
+			<div class="panel-body">
+				<ul class="item-list">
+					<li class="item">
+						<label for="">行距</label>
+						<div class="input-with-unit border-width">
+							<input type="number" min="0" max="100" value="1" name="">
+							<span class="unit">px</span>
+						</div>
+					</li>
+					<li class="item">
+						<label for="">段前</label>
+						<div class="input-with-unit border-width">
+							<input type="number" min="0" max="100" value="1" name="">
+							<span class="unit">px</span>
+						</div>
+					</li>
+					<li class="item">
+						<label for="">段后</label>
+						<div class="input-with-unit border-width">
+							<input type="number" min="0" max="100" value="1" name="">
+							<span class="unit">px</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="normal-panel detail-with-preview">
+			<div class="set-preview"></div>
+			<details open="open">
+				<summary class="panel-title">项目符号与列表</summary>
+				<div class="detail">
+					<select name="" id="" class="select-sx">
+						<option value="">无项目符号</option>
+						<option value="">文本项目符号</option>
+						<option value="">图像项目符号</option>
+						<option value="">编号</option>
+					</select>
+
+				</div>
+			</details>
+		</div>
 	</div>
 </div>

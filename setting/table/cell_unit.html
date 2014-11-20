@@ -1,0 +1,97 @@
+<div class="normal-panel data-format-set">
+	<div class="panel-title">数据格式</div>
+	<div class="panel-body">
+		<select class="select-xs">
+			<option value="">自动</option>
+			<optgroup label="数字类">
+				<option value="">数字</option>
+				<option value="">货币</option>
+				<option value="">百分比</option>
+				<option value="">分数</option>
+				<option value="">记数系统</option>
+				<option value="">科学记数法</option>
+			</optgroup>
+			<optgroup label="文本类">
+				<option value="">文本</option>
+			</optgroup>
+			<optgroup label="时间类">
+				<option value="">日期与时间</option>
+				<option value="">持续时间</option>
+			</optgroup>
+		</select>
+		<div class="detail">
+		</div>
+	</div>
+</div>
+<div class="normal-panel color-fill cell-fill-set">
+	<div class="set-preview"></div>
+	<details open="open">
+		<summary class="panel-title">填充</summary>
+		<select class="select-xs type">
+			<option value="">无填充</option>
+			<option value="">颜色填充</option>
+			<option value="">渐变填充</option>
+			<option value="">图像填充</option>
+		</select>
+		<div class="detail">
+		</div>
+	</details>
+</div>
+<div class="normal-panel cell-border-set">
+	<div class="panel-title">边框</div>
+	<div class="panel-body">
+		<div class="border-select">
+			<a href="javascript:;" class="active">
+				<span class="border-icon border-round"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-center"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-all"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-left"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-vertical"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-right"></span>
+			</a>
+			<a href="javascript:;" class="active">
+				<span class="border-icon border-top"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-middel"></span>
+			</a>
+			<a href="javascript:;">
+				<span class="border-icon border-bottom"></span>
+			</a>
+		</div>
+		<div class="border-set">
+			<select name="" class="select-xs border-type">
+				<option value="solid">实线</option>
+				<option value="dashed">虚线</option>
+				<option value="dotted">点</option>
+				<option value="none">无</option>
+			</select>
+			<div class="detail">
+				<div class="color-picker inline">
+					<div class="color-preview"></div>
+					<label for="color-picker" class="color-pick-btn"></label>
+					<input type="color" id="color-picker" name="border-color">
+				</div>
+				<div class="input-with-unit border-width">
+					<input type="number" min="0" max="100" value="1" name="border-width">
+					<span class="unit">px</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="normal-panel height-light-set">
+	<div class="panel-body">
+		<a href="javascript:;" class="btn btn-default btn-xs height-light-btn">条件高亮显示...</a>
+	</div>
+</div>
