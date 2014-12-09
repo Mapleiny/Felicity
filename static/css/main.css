@@ -35,51 +35,23 @@ label {
 .input-with-unit input {
   float: left;
   border: none;
-  height: 17px;
+  height: 18px;
   direction: rtl;
   font-size: 12px;
 }
 .input-with-unit .unit {
   font-size: 12px;
+  line-height: 18px;
   float: left;
 }
-.select-xs {
-  height: 22px;
-  font-size: 16px;
-  width: 100%;
-}
-.detail-with-preview {
+.input-with-bottom {
+  display: inline-block;
   position: relative;
 }
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 3px;
-  vertical-align: middle;
-  border-top: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.caret.top {
-  border-bottom: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.caret.right {
-  border-left: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-}
-.caret.bottom {
-  border-top: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.caret.left {
-  border-right: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
+.input-with-bottom .input-name {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 3px;
 }
 html,
 body {
@@ -194,6 +166,16 @@ body {
 }
 .icon-arrow {
   background: url(../img/arrow.png) 50% 50% no-repeat;
+}
+.select-xs {
+  height: 22px;
+  font-size: 16px;
+}
+.select-block {
+  width: 100%;
+}
+.detail-with-preview {
+  position: relative;
 }
 .popup {
   position: absolute;
@@ -419,15 +401,11 @@ body {
   top: 50%;
   margin-top: -2px;
   cursor: pointer;
-  margin-left: 4px;
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 3px;
+  margin-left: 4px;
   vertical-align: middle;
-  border-top: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
 }
 .slide .slide-list:after.top,
 .slide .slide-list:before.top {
@@ -453,47 +431,17 @@ body {
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
 }
-.slide .slide-list:after.top,
-.slide .slide-list:before.top {
-  border-bottom: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.slide .slide-list:after.right,
-.slide .slide-list:before.right {
-  border-left: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-}
-.slide .slide-list:after.bottom,
-.slide .slide-list:before.bottom {
-  border-top: 6px solid #929292;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-.slide .slide-list:after.left,
-.slide .slide-list:before.left {
-  border-right: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-}
 .slide .slide-list:after {
   right: 0;
   border-left: 8px solid #929292;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
 }
 .slide .slide-list:before {
   left: 0;
   border-right: 8px solid #929292;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 6px solid #929292;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
 }
 .slide .slide-name {
   display: block;
@@ -641,6 +589,109 @@ body {
   display: inline-block;
   width: 49%;
 }
+.setting-detail > .normal-panel {
+  border-bottom: none;
+}
+.utilities .font-preview {
+  height: 70px;
+  padding: 0 15px;
+  border-bottom: solid 1px #DEDEDE;
+}
+.utilities .font-preview .font-select {
+  display: block;
+  position: relative;
+  color: #333;
+}
+.utilities .font-preview .font-select .text-style {
+  line-height: 70px;
+}
+.utilities .font-preview .font-select .caret {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: traslate(-50%);
+  -webkit-transform: traslate(-50%);
+}
+.utilities .style-layout-tab {
+  text-align: center;
+}
+.utilities .style-layout-tab .btn-group {
+  width: 80%;
+}
+.utilities .style-layout-tab .btn-group .btn {
+  width: 50%;
+}
+.utilities .font-set .panel-body {
+  text-align: center;
+}
+.utilities .font-set .font-family-set {
+  margin-bottom: 10px;
+}
+.utilities .font-set .font-style-set {
+  width: 88px;
+}
+.utilities .font-set .font-style-set a {
+  width: 25%;
+}
+.utilities .alignment-set .btn-group {
+  margin-bottom: 10px;
+}
+.utilities .alignment-set .align-set {
+  width: 100%;
+}
+.utilities .alignment-set .align-set a {
+  width: 25%;
+}
+.utilities .alignment-set .indent-set {
+  width: 100%;
+}
+.utilities .alignment-set .indent-set a {
+  width: 50%;
+}
+.utilities .alignment-set .vertical-align-set {
+  width: 100%;
+}
+.utilities .alignment-set .vertical-align-set a {
+  width: 33.3%;
+}
+.utilities .vertical-spacing-set .item {
+  margin-bottom: 10px;
+}
+.utilities .vertical-spacing-set .item .input-with-unit {
+  float: right;
+}
+.utilities .list-style-set .list-style-select {
+  margin-bottom: 10px;
+}
+.utilities .list-style-set .list-set-detail {
+  text-align: right;
+}
+.utilities .list-style-set .list-set-detail .indentation-setting {
+  margin-bottom: 10px;
+}
+.utilities .list-style-set .list-set-detail .indentation-setting label {
+  vertical-align: top;
+  margin-top: 6px;
+}
+.utilities .list-style-set .list-set-detail .bullets-setting .bullets-select {
+  width: 80px;
+  margin-right: 12px;
+}
+.utilities .list-style-set .list-set-detail .bullets-setting.image label {
+  vertical-align: top;
+  margin-top: 8px;
+}
+.utilities .list-style-set .list-set-detail .bullets-setting .bullets-image-select {
+  height: 28px;
+  width: 65px;
+  border: solid 1px #C5C5C5;
+  background-color: #E0E0E0;
+  display: inline-block;
+  border-radius: 3px;
+}
+.utilities .list-style-set .list-set-detail .bullets-size-setting {
+  margin-top: 10px;
+}
 .page-setting .full-panel {
   padding-left: 120px;
 }
@@ -693,14 +744,14 @@ body {
   font-size: 12px;
   font-weight: 100;
 }
-.table-setting .font-size-set {
+.table-setting .table-font-size-set {
   float: right;
 }
-.table-setting .font-size-set .btn {
+.table-setting .table-font-size-set .btn {
   padding: 1px 13px;
   font-weight: 600;
 }
-.table-setting .font-size-set .btn:first-child span {
+.table-setting .table-font-size-set .btn:first-child span {
   -webkit-transform: scale(0.7);
   transform: scale(0.7);
   transform-origin: 0 80%;

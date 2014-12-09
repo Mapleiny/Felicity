@@ -70,8 +70,20 @@
 	}
 }
 
+.setting-detail{
+	&>.normal-panel{
+		border-bottom: none;
+	}
+}
+
+
+
+@import 'setting/text';
+@import 'setting/sort';
+
 // page
 .page-setting{
+
 	.full-panel{
 		padding-left: 120px;
 		.page-type-name{
@@ -93,230 +105,7 @@
 
 // table
 .table-setting{
-
-	// table base set
-	.col-row-set{
-		text-align: center;
-		margin-bottom: 10px;
-		.item:not(:last-child){
-			margin-right: 12px;
-		}
-		.item{
-			position: relative;
-		}
-		label{
-			position: absolute;
-			width:16px;
-			height:10px;
-			top:50%;
-			margin-top: -5px;
-			left:5px;
-		}
-		.col-left{
-			label{
-				background: url(../img/table_left.png) 50% 50% no-repeat;
-				background-size: auto 12px;
-			}
-		}
-		.row-top{
-			label{
-				background: url(../img/table_top.png) 50% 50% no-repeat;
-				background-size: auto 12px;
-			}
-		}
-		.row-bottom{
-			label{
-				background: url(../img/table_bottom.png) 50% 50% no-repeat;
-				background-size: auto 12px;
-			}
-		}
-		select{
-			width: 65px;
-			direction: rtl;
-			font-size: 12px;
-		}
-	}
-	.table-name-set{
-		label{
-			font-size: 12px;
-			font-weight: 100;
-		}
-	}
-	.font-size-set{
-		float: right;
-		.btn{
-			padding: 1px 13px;
-			font-weight: 600;
-			&:first-child{
-				span{
-					-webkit-transform: scale(0.7);
-					transform: scale(0.7);
-					transform-origin: 0 80%;
-					display: inline-block;
-				}
-			}
-		}
-	}
-	.table-border{
-		.panel-body{
-			.item-list{
-				text-align: center;
-				margin-bottom: 10px;
-			}
-			.border-style{
-				font-size: 14px;
-				width:84px;
-				
-			}
-			.border-width{
-				input{
-					font-size: 12px;
-					height: 20px;
-					width:40px;
-				}
-				.unit{
-					margin-top: 2px;
-				}
-			}
-		}
-	}
-	.interlacing-color-set{
-		.color-picker{
-			float: right;
-		}
-	}
-	.col-row-size-set{
-		.col-row-size{
-			&>.item{
-				margin-bottom: 8px;
-			}
-		}
-		.row-size-set,.col-size-set{
-			position: relative;
-			width:100%;
-			&>.item{
-				width:32%;
-				&:nth-child(3){
-					text-align: center;
-					.btn{
-						padding: 1px 18px;
-					}
-				}
-			}
-		}
-		.input-with-unit{
-			input{
-				width:35px;
-			}
-		}
-	}
-
-	// cell unit set
-	.data-format-set{}
-	.cell-fill-set{}
-	.cell-border-set{
-		.border-select{
-			border:solid 1px #8F8F8F;
-			border-radius: 5px;
-			background-color: #fff;
-			width:85px;
-			height:83px;
-			padding:3px;
-			cursor: pointer;
-			display:inline-block;
-			&>a{
-				display:inline-block;
-				width:23px;
-				height:23px;
-				padding:3px;
-				border-radius: 3px;
-				&.active{
-					background: rgba(199,216,246,0.8);
-				}
-			}
-			.border-icon{
-				display:inline-block;
-				width:100%;
-				height:100%;
-				position: relative;
-				border: solid 1px #D7D7D7;
-				&:before,&:after{
-					content: "";
-					position: absolute;
-					border-top:solid 1px #D7D7D7;
-					border-left:solid 1px #D7D7D7;
-				}
-				&:before{
-					left:0;
-					top:50%;
-					margin-top: -1px;
-					width:100%;
-				}
-				&:after{
-					left:7px;
-					top:0;
-					height:100%;
-				}
-				&.border-round{
-					border-color:#515151;
-				}
-				&.border-center{
-					&:before,&:after{
-						border-color:#515151;
-					}
-				}
-				&.border-all{
-					border-color:#515151;
-					&:before,&:after{
-						border-color:#515151;
-					}
-				}
-				&.border-left{
-					border-left-color:#515151;
-				}
-				&.border-vertical{
-					&:after{
-						border-color:#515151;
-					}
-				}
-				&.border-right{
-					border-right-color:#515151;
-				}
-				&.border-top{
-					border-top-color:#515151;
-				}
-				&.border-middel{
-					&:before{
-						border-color:#515151;
-						z-index: 1;
-					}
-				}
-				&.border-bottom{
-					border-bottom-color:#515151;
-				}
-			}
-		}
-		.border-set{
-			width:140px;
-			display:inline-block;
-			float: right;
-			.border-type{
-				margin-bottom: 5px;
-			}
-			.border-width{
-				input{
-					width:47px;
-					height:18px;
-				}
-			}
-		}
-	}
-	.height-light-set{
-		text-align: center;
-		.height-light-btn{
-			padding:1px 50px;
-		}
-	}
+	@import 'setting/table/all';	
 }
 
 

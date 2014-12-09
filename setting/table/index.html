@@ -17,8 +17,8 @@
 	</table>
 </header>
 <div class="setting-detail">
-	<div class="full-panel">
-		<a href="javascript:;">
+	<div class="full-panel font-preview">
+		<a href="javascript:;" class="font-select">
 			<span class="text-style">正文</span>
 			<span class="caret"></span>
 		</a>
@@ -30,90 +30,131 @@
 				<a href="javascript:;" class="btn btn-default btn-xs">布局</a>
 			</div>
 		</div>
-		<div class="normal-panel">
+		<div class="normal-panel font-set">
 			<div class="panel-title">字体</div>
 			<div class="panel-body">
-				<select name="font-family" class="select-xs">
+				<select name="font-family" class="select-xs select-block font-family-set">
 					<option value="">Helvetica</option>
 				</select>
-				<div class="btn-group">
-					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
-					<a href="javascript:;" class="btn btn-default btn-xs">I</a>
-					<a href="javascript:;" class="btn btn-default btn-xs">U</a>
+				<div class="btn-group font-style-set">
+					<a href="javascript:;" class="btn btn-default btn-xs"><b>B</b></a>
+					<a href="javascript:;" class="btn btn-default btn-xs"><i>I</i></a>
+					<a href="javascript:;" class="btn btn-default btn-xs"><u>U</u></a>
 					<a href="javascript:;" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cog"></span></a>
 				</div>
-				<div class="input-with-unit border-width">
-					<input type="number" min="0" max="100" value="1" name="border-width">
+				<div class="input-with-unit font-size-set">
+					<input type="number" min="0" max="100" value="1" name="font-size">
 					<span class="unit">px</span>
 				</div>
 				<div class="color-picker inline">
 					<div class="color-preview"></div>
-					<label for="color-picker2" class="color-pick-btn"></label>
-					<input type="color" id="color-picker2" name="border-color">
+					<label for="color-picker1" class="color-pick-btn"></label>
+					<input type="color" id="color-picker1" name="border-color">
 				</div>
 			</div>
 		</div>
-		<div class="normal-panel">
+		<div class="normal-panel alignment-set">
 			<div class="panel-title">对齐</div>
 			<div class="panel-body">
-				<div class="btn-group">
-					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+				<div class="btn-group align-set">
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 				</div>
-				<div class="btn-group">
+				<div class="btn-group indent-set">
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 				</div>
-				<div class="btn-group">
+				<div class="btn-group vertical-align-set">
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
 					<a href="javascript:;" class="btn btn-default btn-xs">B</a>
+				</div>
+				<div class="adjust-cell-text-set">
+					<input type="checkbox" id="adjust-cell-text">
+					<label for="adjust-cell-text">绕排单元格中的文本</label>
 				</div>
 			</div>
 		</div>
-		<div class="normal-panel">
+		<div class="normal-panel vertical-spacing-set">
 			<div class="panel-title">行间距</div>
 			<div class="panel-body">
 				<ul class="item-list">
 					<li class="item">
-						<label for="">行距</label>
-						<div class="input-with-unit border-width">
-							<input type="number" min="0" max="100" value="1" name="">
+						<label for="cell-text-row-spacing">行距</label>
+						<div class="input-with-unit line-height">
+							<input type="number" min="0" max="100" value="1" name="line-height" id="cell-text-row-spacing">
 							<span class="unit">px</span>
 						</div>
 					</li>
 					<li class="item">
-						<label for="">段前</label>
-						<div class="input-with-unit border-width">
-							<input type="number" min="0" max="100" value="1" name="">
+						<label for="cell-text-section-before">段前</label>
+						<div class="input-with-unit margin-top">
+							<input type="number" min="0" max="100" value="1" name="margin-top" id="cell-text-section-before">
 							<span class="unit">px</span>
 						</div>
 					</li>
 					<li class="item">
-						<label for="">段后</label>
-						<div class="input-with-unit border-width">
-							<input type="number" min="0" max="100" value="1" name="">
+						<label for="cell-text-section-after">段后</label>
+						<div class="input-with-unit margin-bottom">
+							<input type="number" min="0" max="100" value="1" name="margin-bottom" id="cell-text-section-before">
 							<span class="unit">px</span>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="normal-panel detail-with-preview">
-			<div class="set-preview"></div>
+		<div class="normal-panel list-style-set">
 			<details open="open">
 				<summary class="panel-title">项目符号与列表</summary>
 				<div class="detail">
-					<select name="" id="" class="select-sx">
-						<option value="">无项目符号</option>
+					<select name="list-style" class="select-xs select-block list-style-select">
+						<option value="none">无项目符号</option>
 						<option value="">文本项目符号</option>
 						<option value="">图像项目符号</option>
 						<option value="">编号</option>
 					</select>
-
+					<div class="list-set-detail">
+						<div class="indentation-setting">
+							<label>缩进：</label>
+							<div class="input-with-bottom">
+								<div class="input-with-unit">
+									<input type="number" min="0" max="100" value="1" name="bullets-indent" class="bullets-indent-input">
+									<span class="unit">px</span>
+								</div>
+								<div class="input-name">项目符号</div>
+							</div>
+							<div class="input-with-bottom">
+								<div class="input-with-unit">
+									<input type="number" min="0" max="100" value="1" name="text-indent" class="text-indent-input">
+									<span class="unit">px</span>
+								</div>
+								<div class="input-name">文本</div>
+							</div>
+						</div>
+						<div class="bullets-setting image">
+							<label>当前图像：</label>
+							<div class="bullets-image-select">
+								<div class="image-preview"></div>
+							</div>
+							<br />
+							<div class="input-with-bottom bullets-size-setting">
+								<div class="input-with-unit">
+									<input type="number" min="0" max="100" value="1" name="bullets-indent" class="bullets-size-input">
+									<span class="unit">%</span>
+								</div>
+								<div class="input-name">大小</div>
+							</div>
+							<div class="input-with-bottom">
+								<div class="input-with-unit">
+									<input type="number" min="0" max="100" value="1" name="text-indent" class="text-align-input">
+									<span class="unit">px</span>
+								</div>
+								<div class="input-name">对齐</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</details>
 		</div>
