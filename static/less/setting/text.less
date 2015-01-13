@@ -1,118 +1,188 @@
-.utilities{
-	.font-preview{
-		height: 70px;
-		padding: 0 15px;
-		border-bottom: solid 1px #DEDEDE;
-		.font-select{
-			display: block;
-			position: relative;
-			color:#333;
-			.text-style{
-				line-height: 70px;
-			}
-			.caret{
-				position: absolute;
-				top: 50%;
-				right: 10px;
-				transform: traslate(-50%);
-				-webkit-transform: traslate(-50%);
-			}
+.font-preview{
+	height: 70px;
+	padding: 0 15px;
+	border-bottom: solid 1px #DEDEDE;
+	.font-select{
+		display: block;
+		position: relative;
+		color:#333;
+		.text-style{
+			line-height: 70px;
+		}
+		.caret{
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: traslate(-50%);
+			-webkit-transform: traslate(-50%);
 		}
 	}
-	
-	.style-layout-tab{
+}
+
+.style-layout-tab{
+	text-align: center;
+	.btn-group{
+		width: 80%;
+		.btn{
+			width: 50%;
+		}
+	}
+}
+.tab-detail{
+	&>.normal-panel{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.font-set{
+	.panel-body{
 		text-align: center;
-		.btn-group{
-			width: 80%;
-			.btn{
-				width: 50%;
-			}
+	}
+	.font-family-set{
+		margin-bottom: 10px;
+	}
+	.font-size-set{
+	}
+	.font-style-set{
+		width: 88px;
+		a{
+			width: 25%;
 		}
 	}
-	.font-set{
-		.panel-body{
-			text-align: center;
-		}
-		.font-family-set{
-			margin-bottom: 10px;
-		}
-		.font-size-set{
-		}
-		.font-style-set{
-			width: 88px;
-			a{
-				width: 25%;
-			}
+}
+.alignment-set{
+	.btn-group{
+		margin-bottom: 10px;
+	}
+	.align-set{
+		width: 100%;
+		a{
+			width: 25%;
 		}
 	}
-	.alignment-set{
-		.btn-group{
-			margin-bottom: 10px;
-		}
-		.align-set{
-			width: 100%;
-			a{
-				width: 25%;
-			}
-		}
-		.indent-set{
-			width: 100%;
-			a{
-				width: 50%;
-			}
-		}
-		.vertical-align-set{
-			width: 100%;
-			a{
-				width: 33.3%;
-			}
+	.indent-set{
+		width: 100%;
+		a{
+			width: 50%;
 		}
 	}
-	.vertical-spacing-set{
-		.item{
-			margin-bottom: 10px;
-			.input-with-unit{
-				float: right;
-			}
+	.vertical-align-set{
+		width: 100%;
+		a{
+			width: 33.3%;
 		}
 	}
-	.list-style-set{
-		.list-style-select{
-			margin-bottom: 10px;
+}
+.vertical-spacing-set{
+	.item{
+		margin-bottom: 10px;
+		.input-with-unit{
+			float: right;
+
 		}
-		.list-set-detail{
-			text-align: right;
-			.indentation-setting{
-				margin-bottom: 10px;
-				label{
+	}
+}
+.list-style-set{
+	.list-style-select{
+		margin-bottom: 10px;
+	}
+	.list-set-detail{
+		text-align: right;
+		.indentation-setting{
+			margin-bottom: 10px;
+			label{
+				vertical-align: top;
+				margin-top: 6px;
+			}
+		}
+		.bullets-setting{
+			.bullets-select{
+				width: 80px;
+				margin-right: 12px;
+			}
+			&.image{
+				&>label{
 					vertical-align: top;
-					margin-top: 6px;
+					margin-top: 8px;
 				}
 			}
-			.bullets-setting{
-				.bullets-select{
-					width: 80px;
-					margin-right: 12px;
+			&.identifier{
+				&>label{
+					vertical-align: top;
+					margin-top: 5px;
 				}
-				&.image{
-					label{
-						vertical-align: top;
-						margin-top: 8px;
+				.color-picker{
+					vertical-align: top;
+					margin-top: 1px;
+				}
+			}
+			.bullets-image-select{
+				height: 28px;
+				width: 65px;
+				border: solid 1px #C5C5C5;
+				background-color: #E0E0E0;
+				display: inline-block;
+				border-radius: 3px;
+				padding-right: 22px;
+				position: relative;
+				&:after{
+					content: '';
+					position: absolute;
+					right: 5px;
+					top: 65%;
+					@width:2px;
+					.caret;
+					.caret.bottom;
+				}
+				.image-preview{
+					width: 100%;
+					height: 90%;
+					margin: 5% 0;
+				}
+				.popup{
+					display: none;
+					bottom:170%;
+					right: 0px;
+					&:after{
+						margin-left: 60px;
+					}
+					h1{
+						text-align: center;
+						font-size: 12px;
+						margin-bottom: 8px;
+					}
+					.bullets-image-list{
+						padding: 10px;
+						background-color: #E3E5E8;
+						border: solid 1px #C5C5C5;
+						margin-bottom: 10px;
+						height: 200px;
+						overflow-x: auto;
 					}
 				}
-				.bullets-image-select{
-					height: 28px;
-					width: 65px;
-					border: solid 1px #C5C5C5;
-					background-color: #E0E0E0;
-					display: inline-block;
-					border-radius: 3px;
-				}
-			}
-			.bullets-size-setting{
-				margin-top: 10px;
 			}
 		}
-			
+		.bullets-size-setting{
+			margin-top: 10px;
+		}
+		.list-type-set{
+			margin-bottom: 5px;
+		}
+		.multistage-number-set{
+			text-align: left;
+			margin-bottom: 8px;
+		}
+		.identifier-begin-place-set{
+			text-align: left;
+			.identifier-begin-number{
+				direction: rtl;
+				font-family: Helvetica;
+			}
+		}
+	}	
+}
+.text-padding-set{
+	.panel-body{
+		float: right;
 	}
 }

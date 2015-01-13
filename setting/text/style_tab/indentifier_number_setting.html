@@ -1,0 +1,49 @@
+<div class="indentation-setting">
+	<label>缩进：</label>
+	<div class="input-with-bottom">
+		<div class="input-with-unit">
+			<input type="number" min="0" max="100" value="1" name="bullets-indent" class="bullets-indent-input">
+			<span class="unit">px</span>
+		</div>
+		<div class="input-name">编号</div>
+	</div>
+	<div class="input-with-bottom">
+		<div class="input-with-unit">
+			<input type="number" min="0" max="100" value="1" name="text-indent" class="text-indent-input">
+			<span class="unit">px</span>
+		</div>
+		<div class="input-name">文本</div>
+	</div>
+</div>
+<div class="bullets-setting identifier">
+	<label>编号：</label>
+	<div class="input-with-bottom">
+		<div class="input-with-unit">
+			<input type="number" min="0" max="100" value="1" name="bullets-indent" class="bullets-indent-input">
+			<span class="unit">px</span>
+		</div>
+		<div class="input-name">大小</div>
+	</div>
+	<div class="color-picker inline">
+		<div class="color-preview"></div>
+		<label for="color-picker1" class="color-pick-btn"></label>
+		<input type="color" id="color-picker1" name="border-color">
+	</div>
+	<br />
+	<select name="list-type" class="select-xs select-block list-type-set">
+		<option value="">1.2.3.4.</option>
+	</select>
+	<div class="multistage-number-set">
+		<input type="checkbox" id="multistage-number">
+		<label for="multistage-number">多级编号</label>
+	</div>
+	<div class="identifier-begin-place-set">
+		<input type="radio" id="identifier-begin-after" name="identifier-begin-place" checked="checked">
+		<label for="identifier-begin-after">从上一个继续</label>
+		<br />
+		<input type="radio" id="identifier-begin-selfset" name="identifier-begin-place">
+		<label for="identifier-begin-selfset">开始自：
+			<input type="number" min="0" max="100" value="1" class="identifier-begin-number">
+		</label>
+	</div>
+</div>
