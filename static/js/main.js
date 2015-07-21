@@ -6,9 +6,11 @@
       'lib': '../lib',
       'component': '../component',
       'util': '../uitl',
-      'jQuery': 'lib/jquery-2.1.1.min'
+      'jQuery': '../lib/jquery-2.1.1.min'
     },
     'urlArgs': 'bust=' + (new Date()).getTime()
   });
-  return require(['jQuery'], function() {});
+  return require(['UI/component/manage', 'jQuery'], function(manage) {
+    return manage();
+  });
 })();
