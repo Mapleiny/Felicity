@@ -3,5 +3,5 @@ define(function() {
   var ids, template;
   ids = 0;
   return function() {};
-  return template = "<div class=\"color-picker\">\n	<div class=\"color-preview\"></div>\n	<label for=\"color-picker\" class=\"color-pick-btn\"></label>\n	<input type=\"color\" id=\"color-picker-" + (ids++) + "\">\n</div>";
+  return template = "<div class=\"color-picker\">\n	<div class=\"color-preview\"></div>\n	<label for=\"color-picker\" class=\"color-pick-btn\"></label>\n	<input type=\"color\" id=\"color-picker\">\n</div>";
 });

@@ -9,6 +9,6 @@ define ()->
 		<div class="color-picker">
 			<div class="color-preview"></div>
 			<label for="color-picker" class="color-pick-btn"></label>
-			<input type="color" id="color-picker-#{ids++}">
+			<input type="color" id="color-picker">
 		</div>
 	"""
