@@ -1,14 +1,11 @@
 ##
-# color picker 
+# 颜色选取
 # 
-define ()->
-	ids = 0
-	return ()->
+define [
+	'text!html/component/color_picker.html',
+	'UI/UItemplate'
+],(HTMLTemplate,UItemplate)->
+	class ColorPicker extends UItemplate
+		constructor : ()->
 	
-	template = """
-		<div class="color-picker">
-			<div class="color-preview"></div>
-			<label for="color-picker" class="color-pick-btn"></label>
-			<input type="color" id="color-picker">
-		</div>
-	"""
+	return ColorPicker

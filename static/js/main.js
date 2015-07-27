@@ -6,13 +6,13 @@
       'lib': '../lib',
       'component': '../component',
       'util': '../uitl',
-      'html': '../../../setting',
+      'html': '../../html',
       'jQuery': '../lib/jquery-2.1.1.min',
       'text': '../lib/text'
     },
     'urlArgs': 'bust=' + (new Date()).getTime()
   });
   return require(['UI/manage', 'jQuery'], function(manage) {
-    return console.log(manage);
+    return console.log(manage());
   });
 })();

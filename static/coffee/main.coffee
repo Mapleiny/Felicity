@@ -5,7 +5,7 @@ do()->
 			'lib' : '../lib'
 			'component' : '../component'
 			'util' : '../uitl'
-			'html' : '../../../setting'
+			'html' : '../../html'
 			'jQuery' : '../lib/jquery-2.1.1.min'
 			'text' : '../lib/text'
 		# 'shim' :
@@ -14,4 +14,4 @@ do()->
 		'urlArgs' : 'bust='+(new Date()).getTime()
 
 	require ['UI/manage','jQuery'],(manage)->
-		console.log manage
+		console.log manage()

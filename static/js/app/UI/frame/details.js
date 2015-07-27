@@ -2,16 +2,18 @@
 var __hasProp = {}.hasOwnProperty,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-define(['text!html/component/color_picker.html', 'UI/UItemplate'], function(HTMLTemplate, UItemplate) {
-  var ColorPicker;
-  ColorPicker = (function(_super) {
-    __extends(ColorPicker, _super);
+define(['text!html/frame/details.html', 'UI/UItemplate'], function(HTMLTemplate, UItemplate) {
+  var Details;
+  Details = (function(_super) {
+    __extends(Details, _super);
 
-    function ColorPicker() {
+    function Details() {
       _super.call(this, arguments);
+      this.title = "";
     }
 
-    return ColorPicker;
+    return Details;
 
   })(UItemplate);
+  return Details;
 });

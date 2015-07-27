@@ -1,18 +1,18 @@
 define [
 	'UI/component/color_picker',
-	'UI/component/popip'
-	],()->
+	'UI/component/popup'
+],()->
 	# 导入所有组件
 	# 继承于 UITemplate 类
 	components = arguments
 
 	# UI管理类
 	class UIManage
-		constructor:(model)->
+		constructor:(models)->
+			for model in models
+				m = new model()
 
-
-
-	# 单例管理类
+	# 单例
 	uiManage = null
 	return ()->
 		if !uiManage
