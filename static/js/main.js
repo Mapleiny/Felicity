@@ -5,14 +5,15 @@
     'paths': {
       'lib': '../lib',
       'component': '../component',
-      'util': '../uitl',
+      'util': '../util',
       'html': '../../html',
       'jQuery': '../lib/jquery-2.1.1.min',
-      'text': '../lib/text'
+      'text': '../lib/text',
+      'FEUI': '../FEUIFrame'
     },
     'urlArgs': 'bust=' + (new Date()).getTime()
   });
   return require(['UI/manage', 'jQuery'], function(manage) {
-    return console.log(manage());
+    return new manage();
   });
 })();

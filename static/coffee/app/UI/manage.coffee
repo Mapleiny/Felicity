@@ -1,5 +1,5 @@
 define [
-	'UI/component/color_picker',
+	# 'UI/component/color_picker',
 	'UI/component/popup'
 ],()->
 	# 导入所有组件
@@ -11,6 +11,10 @@ define [
 		constructor:(models)->
 			for model in models
 				m = new model()
+				m.render()
+				m.setDirection('left')
+				$('#utilities').html m.$template
+
 
 	# 单例
 	uiManage = null
@@ -18,4 +22,3 @@ define [
 		if !uiManage
 			uiManage = new UIManage components
 		return uiManage
-		

@@ -12,14 +12,7 @@ define ()->
 	isFunction = (maybeFunction)->
 		return Object.prototype.toString.call(maybeDate) is '[object Function]'
 	replace = ( template , replacement )->
-		replaceKeyArray = template.match /{.*?}/g
-		if !replaceKeyArray then return template
-		for key in replaceKeyArray
-			reg = new RegExp key,'g'
-			value = keyPath replacement , key.slice 1,-1
-			if value is undefined or value is null then value = ''
-			template = template.replace reg,value
-		return templete
+		
 	keyPath = ( dictionary , keyPath )->
 		returnValue = dictionary[keyPath]
 		if keyPath.indexOf '.' > -1
@@ -31,6 +24,17 @@ define ()->
 				else
 					return null
 		return returnValue
+	normalReplace = ( template , replacement )->
+		replaceKeyArray = template.match /{.*?}/g
+		if !replaceKeyArray then return template
+		for key in replaceKeyArray
+			reg = new RegExp key,'g'
+			value = keyPath replacement , key.slice 1,-1
+			if value is undefined or value is null then value = ''
+			template = template.replace reg,value
+		return template
+	magicReplace = ( template , replacement )->
+		
 	return {
 		'isNumber' : isNumber,
 		'isObject' : isObject,
